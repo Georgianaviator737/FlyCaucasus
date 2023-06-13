@@ -7,27 +7,26 @@
     <meta name="description" content="FlyCaucasus is a virtual airline founded in 2023. With a hub in Tbilisi (UGTB) and flights to every continent, it provides an unique experience, connecting aviation enthusiasts across the globe in a supportive and friendly community of aviators.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/images/Logo.png">
     <link rel="stylesheet" href="/css/style.css">
     <title>FlyCaucasus - Home</title>
 </head>
 <body>
-    <header class="header">
+    <header>
         <img src="/images/header logo.png" alt="FlyCaucasus Logo">
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#faq">FAQ</a></li>
-                <li><a href="index.html#contact">Contact Us</a></li>
-                <li><a href="crew.fcgvirtual.com">Crew Center</a></li>
+                <li><a href="index.html" class="nav-list">Home</a></li>
+                <li><a href="index.html#faq" class="nav-list">FAQ</a></li>
+                <li><a href="index.html#contact" class="nav-list">Contact Us</a></li>
+                <li><a href="crew.fcgvirtual.com" class="nav-button">Crew Center</a></li>
             </ul>
         </nav>
     </header>
     <article>
         <section>
             <div>
-                <iframe width="50%" height="500px" src="https://www.youtube.com/embed/ue4V5Uzlf9o" title="FlyCaucasus Trailer Video" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/ue4V5Uzlf9o" title="FlyCaucasus Trailer Video" allowfullscreen></iframe>
             </div>
             <div>
                 <h3>Welcome to FlyCaucasus!</h3>
@@ -67,25 +66,13 @@
             <h3>Contact Us</h3>
             <form>
                 <div>
-                    <label for="name">Your name</label>
-                    <div>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                </div>
-                <div>
-                    <label for="email">Your email address</label>
-                    <div>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                </div>
-                <div>
-                    <label for="Message">Your message</label>
-                    <div>
-                        <textarea id="message" name="message" rows="6" maxlength="3000" required></textarea>
-                    </div>
-                </div>
-                <div>
-                    <button type="submit">Send Message</button>
+                    <label for="name">Your name</label><br>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="email">Your email address</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="Message">Your message</label><br>
+                    <textarea id="message" name="message" rows="6" maxlength="3000" required></textarea><br>
+                    <button type="submit" class="form-button">Send Message</button><br>
                 </div>    
             </form>
         </aside>

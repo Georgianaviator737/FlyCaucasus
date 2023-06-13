@@ -1,3 +1,38 @@
-ul, div, section, aside, footer{
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap');
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+section, aside, header {
     color: #990505;
 }
+
+footer {
+    text-align: center;
+    color: #ffffff;
+    background-color: #990505;
+}
+
+iframe {
+    width: 50%;
+    height: 500px;
+}
+
+.nav-list {
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 500;
+ }
+
+.form-button {
+    color: #ffffff;
+    background-color: #990505;
+}
+
+ .nav-button {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #990505;
+ }
