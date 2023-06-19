@@ -19,20 +19,34 @@ iframe {
     height: 500px;
 }
 
-.nav-list {
+.nav-list-a {
     font-style: normal;
     font-size: 14px;
     font-weight: 500;
- }
-
-.form-button {
-    color: #ffffff;
-    background-color: #990505;
+    display: inline-block;
+    text-decoration: none;
+    color: #990505;
 }
 
- .nav-button {
+.nav-list-b {
     font-size: 14px;
     font-weight: 600;
     color: #ffffff;
     background-color: #990505;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.nav-list-b:hover{
+    color: #990505;
+    background-color:transparent;
  }
+
+.nav-list, .nav-button {
+    display: inline-block;
+ }
+
+ .form-button {
+    color: #ffffff;
+    background-color: #990505;
+}
