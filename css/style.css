@@ -11,8 +11,9 @@ body {
 }
 
 section, aside, header {
+    margin-left: 20px;
+    margin-right: 20px;
     color: #990505;
-    padding: 15px;
 }
 
 footer {
@@ -31,13 +32,19 @@ ul, li, img, nav {
 }
 
 nav {
-    bottom: 12px;
     position: relative;
+    bottom: 12px;
+    padding-bottom: 20px;
+}
+
+h3 {
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 .nav-list-a {
     font-style: normal;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     display: inline-block;
     text-decoration: none;
@@ -59,15 +66,45 @@ nav {
 
 .nav-list-b:hover{
     color: #990505;
-    background-color:transparent;
+    background-color: transparent;
  }
 
 .nav-list, .nav-button {
-    display: inline-block;
-    right: 100%;
+    position: relative;
+    left: 375px;
+    padding: 10px;
+ }
+
+ .welcome, #faq, #contact {
+    padding-top: 20px;
+ }
+
+ .faq-q {
+    font-weight: 600;
+    padding-bottom: 5px;
+ }
+
+ .faq-a {
+    padding-bottom: 10px;
+ }
+
+ #contact {
+    padding-bottom: 20px;
  }
 
  .form-button {
+    font-size: 14px;
+    font-weight: 600;
     color: #ffffff;
     background-color: #990505;
+    transition: 0.5s;
+    border: 1px solid #990505;
+    box-shadow: 0px 5px 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.form-button:hover{
+    color: #990505;
+    background-color: transparent;
 }
