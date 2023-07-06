@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+*::selection {
+    color: #ffffff;
+    background-color: #990505;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -70,14 +75,13 @@ details>p {
     margin-bottom: 10px;
 }
 
+div>p {
+    display: inline-block;
+}
+
 a {
     text-decoration: none;
     color: #ffffff;
-}
-
-summary::selection, h1::selection, p::selection {
-    color: #ffffff;
-    background-color: #990505;
 }
 
 details{
