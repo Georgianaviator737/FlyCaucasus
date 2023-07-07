@@ -152,6 +152,14 @@ summary:hover{
     text-align: center;
 }
 
+.welcome {
+    overflow: hidden;
+    animation-name: typing;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+}
+
 .users, .globe, .plane, .calendar, .wrench {
     border: 2px solid #990505;
     margin-top: 10px;
@@ -212,4 +220,55 @@ summary:hover{
     transform: translateY(50%);
     margin-right: 10px;
     margin-left: 20px;
+}
+
+.fade-right {
+    position: absolute;
+    bottom: -650px;
+    right: 0;
+    width: 600px;
+    animation: fade-right;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+
+}
+
+.fade-left {
+    position: absolute;
+    bottom: -650px;
+    left: -100px;
+    width: 600px;
+    animation: fade-left;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes fade-right {
+    0% {
+        transform: translateX(500px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-left {
+    0% {
+        transform: translateX(-600px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes typing {
+    0% { 
+        width: 0;
+        white-space: nowrap;
+    }
+    100% { 
+        width: 100%; 
+    }
 }
