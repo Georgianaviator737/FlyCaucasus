@@ -224,42 +224,42 @@ summary:hover{
 
 .fade-right {
     position: absolute;
-    bottom: -650px;
-    right: 0;
-    width: 600px;
+    bottom: -550px;
+    right: 10px;
+    width: 500px;
     animation: fade-right;
     animation-duration: 5s;
-    animation-timing-function: ease-in;
+    animation-timing-function: linear;
 
 }
 
 .fade-left {
     position: absolute;
-    bottom: -650px;
-    left: -100px;
-    width: 600px;
+    bottom: -550px;
+    left: 10px;
+    width: 500px;
     animation: fade-left;
     animation-duration: 5s;
-    animation-timing-function: ease-in;
+    animation-timing-function: linear;
 }
 
 @keyframes fade-right {
     0% {
-        transform: translateX(500px);
+        opacity: 0;
     }
 
     100% {
-        transform: translateX(0);
+        opacity: 1;
     }
 }
 
 @keyframes fade-left {
     0% {
-        transform: translateX(-600px);
+        opacity: 0;
     }
 
     100% {
-        transform: translateX(0px);
+        opacity: 1;
     }
 }
 
